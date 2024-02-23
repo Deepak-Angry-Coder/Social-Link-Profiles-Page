@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 14px;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+
+body {
+  background-color: var(--OffBlack);
+}
+
+@font-face {
+  font-family: "inter-semibold";
+  src: url("../fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "inter-Bold";
+  src: url("../fonts/static/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "inter-variables";
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+  font-family: "inter-regular";
+  src: url("../fonts/static/Inter-Regular.ttf");
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_card {
+  width: 23%;
+  background-color: var(--DarkGrey);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.main_card .img_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_card .img_sec img {
+  border-radius: 100%;
+  width: 30%;
+  height: 100%;
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.main_card .img_sec h2 {
+  color: var(--White);
+  font-family: "inter-regular";
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.img_sec h6 {
+  color: var(--Green);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.img_sec p {
+  color: var(--White);
+  margin-bottom: 1rem;
+}
+
+.main_card .link_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.main_card .link_sec a {
+  text-decoration: none;
+  background-color: var(--Grey);
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+  font-family: "inter-semibold";
+  color: var(--White);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .main_card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .main_card {
+    width: 90%;
+  }
+}
